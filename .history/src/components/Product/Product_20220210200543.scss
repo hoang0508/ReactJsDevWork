@@ -1,0 +1,14 @@
+.product {
+  padding: 20px;
+  &-search {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  &-input {
+    width: 100%;
+    border: 1px solid #2cccff;
+    outline: none;
+    border-radius: 10px;
+    padding: 15px;
+  }
+}

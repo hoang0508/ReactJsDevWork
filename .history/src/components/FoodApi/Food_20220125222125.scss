@@ -1,0 +1,13 @@
+.food {
+  max-width: 1170px;
+  margin: 0 auto;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 35px;
+  }
+  &-item {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}

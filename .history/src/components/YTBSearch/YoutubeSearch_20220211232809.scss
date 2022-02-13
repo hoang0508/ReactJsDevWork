@@ -1,0 +1,65 @@
+.youtube {
+  padding: 20px;
+  &-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-search {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 15px;
+    // border-radius: 10px;
+    transition: all 0.25s linear;
+  }
+  &-search:focus {
+    border-color: #2cccff;
+  }
+  &-btn {
+    padding: 15px;
+    border: 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    // border-radius: 10px;
+  }
+  &-list {
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  &-item {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  &-video {
+    width: 40%;
+  }
+  &-ifr {
+    width: 100%;
+    height: 300px;
+  }
+  &-content {
+    width: 60%;
+  }
+  &-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  &-date {
+    color: #999999;
+    margin-bottom: 15px;
+  }
+  &-author {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  &-desc {
+    color: #999999;
+    font-size: 14px;
+  }
+}

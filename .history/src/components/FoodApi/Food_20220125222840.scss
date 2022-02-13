@@ -1,0 +1,31 @@
+.food {
+  max-width: 1170px;
+  margin: 20px auto 0;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 100px;
+  }
+  &-item {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  &-image {
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}

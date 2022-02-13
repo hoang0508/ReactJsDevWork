@@ -1,0 +1,10 @@
+.product {
+  padding: 20px;
+  &-search {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  &-input {
+    width: 100%;
+  }
+}

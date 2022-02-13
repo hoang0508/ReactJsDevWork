@@ -1,0 +1,64 @@
+.food {
+  max-width: 1170px;
+  margin: 20px auto 0;
+  &-input {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    outline: none;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 40px 0 100px;
+  }
+  &-item {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    cursor: pointer;
+    :focus {
+      border-color: #2cccff;
+    }
+  }
+  &-image {
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  &-loading {
+    width: 80px;
+    height: 80px;
+    border-radius: 100rem;
+    border: 2px solid #2cccff;
+    border-right: transparent;
+    animation: foodLoading 2s linear infinite;
+    margin: 50px auto;
+  }
+  @keyframes foodLoading {
+    0% {
+      transform: rotate(0deg);
+    }
+    // 50% {
+    //   transform: rotate(45deg);
+    // }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
